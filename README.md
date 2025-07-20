@@ -1,33 +1,28 @@
 # codsoft_taskno_3
 Artificial Intelligence task_no_3
-Image Captioning AI
+Movie Recommendation System
 
-This project implements an **Image Captioning** system that automatically generates a descriptive caption for a given image. It combines **Convolutional Neural Networks (CNNs)** for image feature extraction and **RNN/Transformer models** for language generation.
+A simple recommendation system that suggests movies to users based on their preferences using **content-based filtering** and optionally **collaborative filtering**.
 
-What It Does
+Features
 
-- Takes an image as input
-- Extracts visual features using **ResNet50** (or VGG16)
-- Uses an **LSTM model** (or Transformer) to generate a caption
-- Outputs a human-readable sentence describing the image
+- Recommend movies based on movie description similarity (TF-IDF + Cosine Similarity)
+- Simple CLI-based interface
+- Optional support for collaborative filtering (user-based)
+- Easy to extend to books, products, or music
+- 
+Dataset
 
-Tech Stack
+Uses a modified version of the [MovieLens](https://grouplens.org/datasets/movielens/) dataset or your custom `movies.csv` with:
 
-- **Python 3**
-- **TensorFlow / Keras**
-- **ResNet50 / VGG16** – Pretrained CNN for feature extraction
-- **LSTM / GRU** – Caption generation
-- **Tokenizer** – For converting text to sequences
-- **Flickr8k / MSCOCO** dataset – Training data
-  
-How to Run
-1. Clone this repo:
-   ```bash
-   git clone https://github.com/your-username/image-captioning-ai.git
-   cd image-captioning-ai
-2. Install dependencies: 
-   pip install -r requirements.txt
-3. Run preprocessing & training:
-   python train.py
-5. Caption an image:
-   python caption.py --image test.jpg
+1. Clone this repository:
+   git clone https://github.com/your-username/recommendation-system.gitcd recommendation-system
+   
+3. Install dependencies:
+   pip install pandas scikit-learn
+   
+4. Run the recommender:
+   python recommendation.py
+    
+   
+
